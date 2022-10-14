@@ -5,9 +5,8 @@
 **css**<br>
 **JavaScript**<br>
 +gsap <br>
-+Swiper
++Swiper<br>
 
------
 ## 구현
 1. 스타벅스 메인홈페이지
 2. 로그인 창
