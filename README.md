@@ -3,9 +3,10 @@
 ## 언어
 **html5**<br>
 **css**<br>
-**JavaScript**
-+gsap 
+**JavaScript**<br>
++gsap <br>
 +Swiper
+
 -----
 ## 구현
 1. 스타벅스 메인홈페이지
