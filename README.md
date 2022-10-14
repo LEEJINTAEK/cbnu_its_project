@@ -4,6 +4,8 @@
 **html5**<br>
 **css**<br>
 **JavaScript**
++gsap 
++Swiper
 -----
 ## 구현
 1. 스타벅스 메인홈페이지
