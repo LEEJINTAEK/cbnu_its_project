@@ -1,6 +1,6 @@
 <div align="center">
   <br />
-  <h2>  ☕Starbucks Clone Web </h2>
+  <h1>  ☕Starbucks Clone Web </h1>
   <br />
 </div>
 
