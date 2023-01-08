@@ -6,18 +6,27 @@
 
 ## 소개
 
+ <br />
+ 
 **Starbucks** Web 서비스
 
 👉 [🔗구경하러 바로 가기!!](https://tubular-babka-24166d.netlify.app/)
 
+
+<br />
+<br />
 
 ## 언어
 
 <br />
 
 ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?&logo=javascript&logoColor=white)
+<br /> 
 +gsap <br />
 +Swiper<br />
+
+<br />
+<br />
 
 ## 구현
 
