@@ -1,12 +1,15 @@
-# Starbucks Clone Web
+<div align="center">
+  <br />
+  <h2>  ☕Starbucks Clone Web </h2>
+  <br />
+</div>
 
 ## 소개
 
 **Starbucks** Web 서비스
 
-<br />
-
 👉 [🔗구경하러 바로 가기!!](https://tubular-babka-24166d.netlify.app/)
+
 
 ## 언어
 
