@@ -1,84 +1,70 @@
-.signin{
+.rank {
+    color: orange;
+}
+.intro {
     margin-top: 110px;
-    padding: 100px 0 150px;
-    background-image: url("../images/signin_bg.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    background-color: #f7f7f7;
 }
-
-.signin h1{
-    color: #fff;
-    font-size: 30px;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 24px;
+.intro h1{
+    font-size: 40px;
+    font-weight: bold;
 }
-.signin .signin__card{
-    width: 500px;
-    margin: 0 auto;
-    border-radius: 6px;
-    background-color: #F6F5F0;
-    box-shadow: 2px 2px 20px rgba(0, 0, 0, .3);
+.intro p{
+    font-size: 20px;
+    font-weight: bold;
+    color: #9b9b9b;
+}
+.menu-container{
+    position: static;
+    display: flex;
+    justify-content: center;
+}
+.menu-container .menu-wrap .menu-content{
+   display: flex;
+   align-items: center;
+   border-bottom: 2px solid #dbdbdb;
+}
+.menu-container .menu-wrap .menu-content img{    
+    padding: 20px 40px 20px 20px;
+    width: 300px;
+    height: 250px;
+}
+.menu-container .menu-wrap .menu-content .menu-review h1{
+    font-size: 40px;
+    font-weight: normal;
     color: #555;
 }
-.signin .signin__card h2{
-    padding: 30px;
-    font-size: 18px;
-    text-align: center;
-    border-bottom: 1px solid #ddd;
-}
-.signin .signin__card h2 strong{
-    font-weight: 700;
-    color: #006633;
-}
-
-.signin .signin__card form{
-    padding: 30px 22px;
-}
-
-.signin .signin__card form input{
-    width: 100%;
-    margin-bottom: 12px;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    outline: none;
-    box-sizing: border-box;
-    font-size: 14px;
-}
-.signin .signin__card form [type="submit"] {  /* [] 속성 선택자 */
-    background-color: #006633;
-    border: none;
-    color: #fff;
-    font-size: 20px;
+.menu-container .menu-wrap .menu-content .menu-review h1 button {
+    position: relative;
+    left: 600px;
+    display: flex;    
+    font-size: 30px;
+    bottom: 30px;
     cursor: pointer;
 }
-
-.signin .signin__card form p{
-    font-size: 12px;
-    color: #006633;
-    text-align: center;
+.menu-container .menu-wrap .menu-content .menu-review h1 button i{
+    color: black;
 }
-.signin .signin__card .action{
+.menu-container .menu-wrap .menu-content .menu-review h1 button i.active{
+    color: orange;
+}
+.menu-container .menu-wrap .menu-content .menu-review .address {
+    font-size: 20px;
+    color: #9b9b9b;
+}
+.menu-container .menu-wrap .menu-content .menu-review p {
+    font-size: 24px;
+    color: black;
+}
+.menu-container .menu-wrap .menu-content .menu-review p a {
+    font-size: 20px;
+    color: #888;
+    position: relative;
+    left: 600px;
     display: flex;
-    border-top: 1px solid #ddd;
+    bottom: 30px;
 }
-.signin .signin__card .action a{
-    flex-grow: 1; /*증가너비 1비율*/
-    flex-basis: 0; /*기본너비 0*/
-    text-align: center;
-    padding: 20px;
-    color: #555;
-    font-size: 14px;
-    border-right: 1px solid #ddd;
-}
-.signin .signin__card .action a:last-child{
-    border-right: none;
-}
-.signin .signin__card .action a:hover{
-    text-decoration: underline;
-}
-
-
