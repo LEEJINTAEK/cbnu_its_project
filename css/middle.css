@@ -1,0 +1,322 @@
+/* .rank {
+    color: orange;
+} */
+/* .intro {
+    margin-top: 110px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f7f7f7;
+}
+.intro h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+.intro p{
+    font-size: 20px;
+    font-weight: bold;
+    color: #9b9b9b;
+} */
+/* .menu-container{
+    position: static;
+    display: flex;
+    justify-content: center;
+    margin-right: 300px;
+}
+.menu-container .menu-wrap .menu-content{
+   display: flex;
+   align-items: center;
+   border-bottom: 2px solid #dbdbdb;
+}
+.menu-container .menu-wrap .menu-content img{    
+    padding: 20px 40px 20px 20px;
+    width: 290px;
+    height: 240px;
+}
+.menu-container .menu-wrap .menu-content .menu-review h1{
+    font-size: 40px;
+    font-weight: normal;
+    color: #555;
+}
+.menu-container .menu-wrap .menu-content .menu-review h1 button {
+    position: relative;
+    left: 600px;
+    display: flex;    
+    font-size: 30px;
+    bottom: 30px;
+    cursor: pointer;
+}
+.menu-container .menu-wrap .menu-content .menu-review h1 button i{
+    color: black;
+}
+.menu-container .menu-wrap .menu-content .menu-review h1 button i.active{
+    color: orange;
+}
+.menu-container .menu-wrap .menu-content .menu-review .address {
+    font-size: 20px;
+    color: #9b9b9b;
+}
+.menu-container .menu-wrap .menu-content .menu-review p {
+    font-size: 24px;
+    color: black;
+}
+.menu-container .menu-wrap .menu-content .menu-review p a {
+    font-size: 20px;
+    color: #888;
+    position: relative;
+    left: 600px;
+    display: flex;
+    bottom: 30px;
+} */
+
+.signin{
+    margin-top: 110px;
+    padding: 50px 0 150px;
+    background-color:#f7f7f7;;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+article, aside, canvas, details, figcaption, figure, footer, header, nav, menu, nav, section, main {
+    display: block;
+}
+.signin .intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.signin .intro h1{
+    color: black;
+    font-size: 30px;
+    font-weight: 700;
+}
+.signin .intro p{
+    font-size: 20px;
+    bottom: 30px; 
+    position: relative;
+}
+.signin .signin__card{
+    width:100%;
+    margin: 0 auto;
+    border-radius: 6px;
+    background-color: #F6F5F0;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, .3);
+    color: #555;
+}
+.signin .signin__card h2{
+    padding: 30px;
+    font-size: 18px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+.signin .signin__card h2 strong{
+    font-weight: 700;
+    color: #006633;
+}
+
+.signin .signin__card form{
+    padding: 30px 22px;
+}
+
+.signin .signin__card form input{
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.signin .signin__card form [type="submit"] {  /* [] 속성 선택자 */
+    background-color: #006633;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.signin .signin__card form p{
+    font-size: 12px;
+    color: #006633;
+    text-align: center;
+}
+.signin .signin__card .action{
+    display: flex;
+    border-top: 1px solid #ddd;
+}
+.signin .signin__card .action a{
+    flex-grow: 1; /*증가너비 1비율*/
+    flex-basis: 0; /*기본너비 0*/
+    text-align: center;
+    padding: 20px;
+    color: #555;
+    font-size: 14px;
+    border-right: 1px solid #ddd;
+}
+.signin .signin__card .action a:last-child{
+    border-right: none;
+}
+.signin .signin__card .action a:hover{
+    text-decoration: underline;
+}
+/* 내가 추가한 css */
+
+ul li{
+    list-style:none;
+}
+
+.restaurants-list {
+    display: block;
+    margin-left: 16px;
+    text-align: left;
+    margin:auto;
+    width:100%;
+    max-width:600px;
+}
+
+.restaurant{
+    display:flex;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    border-bottom:1px solid #dbdbdb;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.restaurant-img img{
+    display:inline-block;
+    width:238px; height: 238px;
+}
+
+.inform{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left:10px;
+    position:relative;
+    height: 250px;
+}
+
+.inform a{
+    color:#555;
+}
+
+.inform a:hover {
+    -webkit-animation: zoom .3s;
+  animation: zoom .3s;
+}
+@-webkit-keyframes zoom {
+  50% {
+    -webkit-transform: scale(1.05);
+  }
+}
+@keyframes zoom {
+  50% {
+    transform: scale(1.05);
+  }
+  }
+
+.inform .name {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size:28.8px;
+    font-weight:800;
+}
+
+.inform .category {
+    font-size:16px;
+    color:gray;
+    padding-top: 12.8px;
+}
+
+.inform .address{
+    color:gray;
+    border-bottom:1px solid #dbdbdb;
+}
+.adj{
+    text-align: center;
+}
+
+h3{
+    font-weight: bold;
+    display: block;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    justify-content:space-between;
+    border-bottom:1px solid #dbdbdb;
+}
+
+.menu_name{
+    display:inline-block;
+    width:150px;
+    text-align:left;
+}
+
+.menu_price{
+    display:inline-block;
+    text-align:right;
+    margin-right: 0px;
+    color:red;
+}
+
+.operation_day{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+
+.operation_time {
+    margin-right:6px;
+}
+.operation_time h4{
+    font-size:14px;
+    font-weight:bold;
+}
+
+.operation_time .time-container{
+    font-size: 12px;
+    display:flex;
+    flex-direction:row;
+}
+
+.time-container div:nth-child(1){
+    padding-right: 8px;
+}
+
+.break_day{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+
+.break_day h4{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.break_day p{
+    font-size: 12px;
+}
+.restaurant button{
+    background-color: #F6F5F0;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+.restaurant button i{
+    color: black;
+    font-size: 30px;
+}
+.restaurant button i.active {
+    color: gold;
+}
