@@ -95,26 +95,44 @@ a {
     transition-delay: .9s;
 }
 
-
-
+header .badges {
+    position: absolute;
+    top: 132px;
+    right: 20px;   
+}
+.badges .badge1 img{
+    width: 220px;
+    height: 180px;
+    border-radius: 15px;
+    overflow: hidden;
+    /* box-shadow: 4px 4px 10px rgba(0, 0, 0, 15); */
+}
+.badges .badge2 img{
+    width: 220px;
+    height: 110px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 15);
+} 
 
 /* header */
 header {
     background-color: #f6f5f0;
     border-bottom: 1px solid #c8c8c8;
-    position: fixed;
+    display: flex;
+    position: fixed; 
     top: 0;
     width: 100%;
     z-index: 9; /* 순서 */
 }
 header > .inner {
-    /* width: 1100px; */
-    height: 110px;
-    /* margin: 0 auto;
-    position: relative; */
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:8px 12px;
 }
 header .logo {    
-    height: 75px;
+    height: 85px;
     position: absolute; /*자식*/
     top: 0;
     bottom: 0;
@@ -129,74 +147,6 @@ header .sub-menu {
 
 
 }
-header .sub-menu ul.menu {
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-}
-header .sub-menu ul.menu li {
-    position: relative;
-}
-header .sub-menu ul.menu li::before {
-    content: "";
-    /* display: block; */
-    width: 1px;
-    height: 12px;
-    background-color: #e5e5e5;
-    position: absolute;  /*자동으로 block*/
-    top: 0;
-    bottom: 0;
-    margin: auto;
-}
-header .sub-menu ul.menu li:nth-child(1)::before {
-    display: none;                            /* 첫번째 라인선 없앰*/
-}
-header .sub-menu ul.menu li a {
-    font-size: 12px;
-    padding: 11px 16px;  /*사용자가 클릭하기 쉽게*/
-    display: block;  /*사용자가 클릭하기 쉽게*/
-    color: #656565;
-}
-header .sub-menu ul.menu li a:hover {
-    color: #000;
-}
-header .sub-menu .search {
-    
-    height: 34px;
-    position: relative;
-}
-header .sub-menu .search input{
-    width: 36px;
-    height: 34px;
-    padding: 4px 10px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    border-radius: 5px;
-    outline: none;
-    background-color: white;
-    color: #777;
-    font-size: 12px;
-    transition: width .4s;
-}
-
-header .sub-menu .search input:focus {
-    width: 190px;
-    border: #669900;
-}
-
-header .sub-menu .search .material-icons {
-    height: 24px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 5px;
-    margin: auto;
-    transition: .4s;
-}
-
-header .sub-menu .search.focused .material-icons{
-    opacity: 0; /* 아이콘 없앰 */
-} 
-
 
 header .main-menu {
     display: flex;
@@ -206,98 +156,66 @@ header .main-menu {
     z-index: 1;
 }
 
+header .main-menu a{
+    text-decoration: none;
+    color:#333;
+}
+
 header .main-menu .item .item__name {
-    padding: 10px 20px 34px 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
+    padding: 20px 20px 18px 20px;
+    font-family: 'Jua', sans-serif;
+    font-size: 35px;
+    margin-bottom:20px;
 }
 header .main-menu .item:hover .item__name {
-    background-color: #2c2a29;
+    background-color: pink;
     color: #669900;
-    border-radius: 6px 6px 0 0;
+    border-radius: 6px 6px 6px 6px;
 }
-
-header .main-menu .item .item__contents{
-    width: 100%;
-    position: fixed;
-    left: 0;
-    display: none;
+h2{
+    font-family: 'Jua', sans-serif;
+    color:#737373;
+    margin-bottom: 20px;
 }
-header .main-menu .item:hover .item__contents{
-    display: block;
+.inner .nav_toggle{
+    display:none;
+    border-radius: 8px;
 }
-
-header .main-menu .item .item__contents .contents__menu {
-    background-color: #2c2a29; 
-}
-header .main-menu .item .item__contents .contents__menu > ul{
+@media screen and (max-width:768px){
+    
+    .inner ul{
+        flex-direction: column;
+        align-items: center;
+        width:100%;
+        display:none;
+    }
+    .inner .ul li{
+        display:block;
+        margin:auto;
+        width:100%;
+        text-align: center;
+    }
+    .inner .nav_toggle{
+        position:absolute;
+        right:15px;
+        display:block;
+    }
+    .inner h2{
+        margin-bottom: 20px;
+    }
+    .active{
     display: flex;
-    padding: 20px 0;
-}
-header .main-menu .item .item__contents .contents__menu > ul > li {
-    width: 220px;
-}
-header .main-menu .item .item__contents .contents__menu > ul > li h4{
-    padding: 3px 0 12px 0;
-    font-size: 14px;
-    color: #fff;   
-}
-
-header .main-menu .item .item__contents .contents__menu > ul > li ul li{
-    padding: 5px 0;
-    font-size: 12px;
-    color: #999;
-    cursor: pointer;
-}
-header .main-menu .item .item__contents .contents__menu > ul > li ul li:hover{
-    color: #669900;
-
-}
-header .main-menu .item .item__contents .contents__menu > ul > li ul li a {
-    color: #999;
-}
-header .main-menu .item .item__contents .contents__menu > ul > li ul li a:hover{
-    color: #669900;
-
-}
-
-header .main-menu .item .item__contents .contents__texture {
-    padding: 26px 0;
-    font-size: 12px;
-    background-image: url("../images/main_menu_pattern.jpg");
-}
-
-header .main-menu .item .item__contents .contents__texture h4{
-    color: #999;
-    font-weight: 700;
-    font-size: 12px;
-}
-
-header .main-menu .item .item__contents .contents__texture p {
-    color: #669900;
-    margin: 4px 0 14px;
-}
-
-header .badges {
-    position: absolute;
-    top: 132px;
-    right: 12px;
-}
-header .badges .badge {
-    border-radius: 10px;
-    overflow: hidden;
-    margin-bottom: 12px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 15);
-}
-
+    } 
+} 
 
 /* footer */
 footer{
-    background-color: #272727;
+    background-color: #706969;
     border-top: 1px solid #333;
 }
 footer .inner{ 
     padding: 40px 0 60px 0;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
 footer .menu{
     display: flex;
@@ -349,8 +267,9 @@ footer .info{
 }
 footer .info span{
     margin-right: 20px;
-    color: #999;
+    color: rgb(150, 149, 149);
     font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 footer .info span:last-child{
     margin-right: 0;
@@ -363,4 +282,13 @@ footer .copyright{
 }
 footer .logo{
     margin: 30px auto 0;    /*img요소가 display:block;+margin:0 auto;인 경우 width 속성이 없이도 가운데 정렬이 가능*/
-}                                       /*여기선 display:block 사용*/
+}  
+footer p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:whitesmoke;
+    text-align: center;
+}
+footer p:nth-child(3){
+    padding-top:8px;
+    font-size: 5px;
+}

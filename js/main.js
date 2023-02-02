@@ -29,19 +29,32 @@ const introArray = [
 
 let obTimeOut;
 let n = 0;
+let c;
+let i;
+
+function changeOpacity() {
+  document.getElementsByClassName("img_id")[0].style.opacity = "1";
+}
+
+function changeImg() {
+  document.getElementsByClassName("img_id")[0].src = pictureArray[n];
+}
 
 function RotateImage() {
+  n++;
   if (n < pictureArray.length) {
-    document.getElementsByClassName("img_id")[0].src = pictureArray[n];
+    document.getElementsByClassName("img_id")[0].style.opacity = "0.7";
+
     document.getElementsByClassName("name")[0].innerHTML = nameArray[n];
     document.getElementsByClassName("add")[0].innerHTML = addressArray[n];
     document.getElementsByClassName("food_tag")[0].innerHTML = foodArray[n];
     document.getElementsByClassName("food_address")[0].href = FAArray[n];
     document.getElementsByClassName("intro")[0].innerHTML = introArray[n];
-    obTimeOut = setTimeout("RotateImage()", 3000);
-    n++;
+    i = setTimeout("changeImg()", 150);
+    c = setTimeout("changeOpacity()", 300);
+    obTimeOut = setTimeout("RotateImage()", 5000);
   } else {
-    n = 0;
+    n = -1;
     obTimeOut = setTimeout("RotateImage()", 1);
   }
 }

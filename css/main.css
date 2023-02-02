@@ -3,16 +3,21 @@
     position:relative;
     display:flex;
     width:100%; height:620px;
+    font-family: 'Noto Sans KR', sans-serif;
     
     background:rgba(0,0,0,0.25);
 }
+.visual a{
+    text-decoration: none;
+}
 
-.visual .img_id {
+.img_id {
     position:absolute;
-    z-index:-1; /*뒤로*/
+    z-index:-1;
     width:100%;
+    opacity: 1;
     object-fit:cover;
-    transition:all 0.3s ease-in-out 0s;
+    transition:all 0.3s linear 0s;
 
 }
 
@@ -88,13 +93,12 @@
 }
 
 
-.food_address>a>span:visited{
-    
+
+.food_address {
+    text-decoration: none;
     color:white;
 }
-.food_address a{
-    color:white;
-}
+
 /* notice */
 
 
@@ -217,7 +221,7 @@
     background-color: rgba(0, 0, 0, 0.5);
     bottom: 8px; 
     left: 20px;
-    font-size: 25px;
+    font-size: 22px;
     color: white;
     display: flex;
     flex-direction: row;
@@ -551,7 +555,7 @@
 
 /* awards */
 .awards{
-    background-color: #272727;
+    background-color: #F6F5F0;     
 }
 .awards .inner{
     padding: 40px 0;
@@ -564,10 +568,10 @@
 .awards .swiper-next{
     width: 42px;
     height: 42px;
-    border: 2px solid #fff;
+    border: 2px solid #0f0c0c;
+    color: #0f0c0c;
     border-radius: 50%;
     outline: none;
-    color: #fff;
     opacity: .3;
     cursor: pointer;
     display: flex;
