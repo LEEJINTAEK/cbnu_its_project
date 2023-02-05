@@ -138,6 +138,8 @@
     font-size: 17px;
     font-weight: 700;
     margin-right: 20px;
+    position: relative;
+    top: 11px;
 }
 .notice .notice-line .inner__left .swiper-container{ 
     flex-grow: 1;
@@ -172,6 +174,8 @@
 .notice .notice-line .inner__right h2{
     font-size: 17px;
     font-weight: 700;
+    position: relative;
+    top: 10px;
 }
 .notice .notice-line .inner__right .toggle-promotion{
     width: 62px;
@@ -287,49 +291,6 @@
 .notice .promotion .swiper-next:hover {
     background-color: #333;
     color: white;
-}
-
-/* rewards */
-.rewards{
-    position: relative;
-}
-.rewards .bg-left{
-    width: 50%;
-    height: 100%;
-    background-color: #272727;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-.rewards .bg-right{
-    width: 50%;
-    height: 100%;
-    background-color: #d5c798;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-.rewards .inner {
-    background-image: url("../images/rewards.jpg");
-    height: 241px;
-}
-.rewards .btn-group{
-    position: absolute;
-    bottom: 24px;
-    right: 0;
-    width: 250px;
-    display: flex;
-    flex-wrap: wrap; /*줄바꿈 허용*/
-}
-.rewards .btn-group .btn.sign-up{
-    margin-right: 10px;
-}
-.rewards .btn-group .btn.sign-in{
-    width: 110px;
-}
-.rewards .btn-group .btn.gift{
-    margin-top: 10px;
-    flex-grow: 1; /*증가너비비율*/
 }
 
 /* youtube */

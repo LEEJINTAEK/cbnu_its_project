@@ -169,7 +169,6 @@ header .main-menu .item .item__name {
 }
 header .main-menu .item:hover .item__name {
     background-color: pink;
-    color: #669900;
     border-radius: 6px 6px 6px 6px;
 }
 h2{
